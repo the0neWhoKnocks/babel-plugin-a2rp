@@ -1,0 +1,7 @@
+# directories
+tests
+
+# files
+*.log
+.gitignore
+package-lock.json
