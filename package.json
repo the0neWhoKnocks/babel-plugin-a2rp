@@ -1,0 +1,39 @@
+{
+  "name": "@noxx/babel-plugin-a2rp",
+  "version": "1.0.0",
+  "description": "Converts aliases in Strings to relative paths",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest ./tests/index.test.js",
+    "test:watch": "jest --watch ./tests/index.test.js"
+  },
+  "jest": {
+    "collectCoverage": false,
+    "watchPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/tests/src/components/temp.js"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/the0neWhoKnocks/babel-plugin-a2rp.git"
+  },
+  "keywords": [
+    "babel",
+    "plugin",
+    "alias",
+    "aliases",
+    "relative",
+    "path"
+  ],
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/the0neWhoKnocks/babel-plugin-a2rp/issues"
+  },
+  "homepage": "https://github.com/the0neWhoKnocks/babel-plugin-a2rp#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "jest": "^24.7.1"
+  }
+}
