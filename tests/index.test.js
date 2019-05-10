@@ -55,7 +55,8 @@ describe('plugin', () => {
       .then(({ code }) => {
         lines = p(code);
         expect(lines[0]).toEqual(expect.stringContaining('../utils/loadFile'));
-        expect(lines[3]).toEqual(expect.stringContaining('../config'));
+        expect(lines[3]).toEqual(expect.stringContaining("const str = 'ROOT_CLASS'"));
+        expect(lines[4]).toEqual(expect.stringContaining('../config'));
       });
   });
 });

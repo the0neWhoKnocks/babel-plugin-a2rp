@@ -4,4 +4,5 @@ tests
 # files
 *.log
 .gitignore
+.travis.yml
 package-lock.json
