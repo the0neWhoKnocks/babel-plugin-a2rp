@@ -10,7 +10,7 @@ const a2rp = () => {
         if( !aliases || !filename ) return;
         
         const aliasKeys = Object.keys(aliases).map((alias) => alias);
-        const aliasRegEx = new RegExp(`^(${ aliasKeys.join('|') })`);
+        const aliasRegEx = new RegExp(`^(${ aliasKeys.join('|') })\\b`);
         const currString = path.node.value;
         const match = currString.match(aliasRegEx);
         
